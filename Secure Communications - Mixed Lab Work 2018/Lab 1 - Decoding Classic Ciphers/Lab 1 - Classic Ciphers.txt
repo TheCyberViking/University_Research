@@ -1,0 +1,105 @@
+In the given lab brife Mark recommended to use two online tool in the following section 
+"This lab will use the tools on the http://www.cryptool-online.org/ or the https://www.dcode.fr 
+website to give you the opportunity to learn about ciphers and to test them in an interactive way within your browser,
+from taking part in the ctf I have found that these online tools thend not to give the best results, so I have decided
+to use a tool that i know called cyber chef which can be found https://gchq.github.io/CyberChef/ developed by GCHQ for 
+learning, encrypting and decrypting given ciphers.
+
+Exercise 1: Rotational ciphers (substitution or shift Ciphers)
+  Decode this classic Caesar’s ciphers:
+    a. Wkh ruljlqdo Fdhvdu flskhu dozdBv xvhg d vkliw ri wkuhh
+    
+    As this is an unknown rotation of the Ceaser Cipher I defeault back to the default tool of https://www.dcode.fr that
+    allows the user to check all possible shifts of the ceaser cipher. using this the top return for the given cipher is
+    THEORIGINALCAESARCIPHERALWAYSUSEDASHIFTOFTHREE =	THE ORIGINAL CAESAR CIPHER ALWAYS USED A SHIFT OF THREE 
+    Wkh ruljlqdo Fdhvdu flskhu dozdBv xvhg d vkliw ri wkuhh = THE ORIGINAL CAESAR CIPHER ALWAYS USED A SHIFT OF THREE
+    This cipher used a shift of +3
+
+
+  Decode this ROT-13 cipher:
+    b. EBG 13 JNF HFRQ OL ZVPEBFBSG SBE RAPBQVAT JVAQBJF ERTVFGEL RAGEVRF
+    
+    for decodeding ROT-13 I will use cyberchef by GCHQ for this, by dragging the ROT-13 moudle from the selection pannel
+    and giving the cipher it has printed out the following data from the given cipher
+    ROT 13 WAS USED BY MICROSOFT FOR ENCODING WINDOWS REGISTRY ENTRIES
+    
+    EBG 13 JNF HFRQ OL ZVPEBFBSG SBE RAPBQVAT JVAQBJF ERTVFGEL RAGEVRF =  ROT 13 WAS USED BY MICROSOFT FOR ENCODING WINDOWS REGISTRY ENTRIES
+    
+    
+  Try decode the following messages that have all been encoded using shift ciphers.
+    c. MYWWYX FKBSKDSYXC YP DRO CRSPD KBO YPDOX ECON VSUO NSPPOBOXD UOIC
+    testing this guy against the ceaser cipher with trying ever form of ship possible I found that it was indeed a ceaser chiper
+    with a shift of +10 COMMONVARIATIONSOFTHESHIFTAREOFTENUSEDLIKEDIFFERENTKEYS 
+    MYWWYX FKBSKDSYXC YP DRO CRSPD KBO YPDOX ECON VSUO NSPPOBOXD UOIC = COMMON VARIATIONS OF THE SHIFT ARE OF TEN USED LIKE DIFFERENT KEYS
+    
+  
+    d. RFCQC AGNFCPQ YPC RPGTGYJ RM APYAI YLB QMJTC CTCL ZW FYLB
+    this cipher showed up both as a ceaser cipher of +24 shifts as THESE CIPHERS ARE TRIVIAL TO CRACK AND SOLVE EVEN BY HAND
+    but this also showed up in cyberchef as ROT-13 with a rotation of 54 giving the exsact same output 
+    RFCQC AGNFCPQ YPC RPGTGYJ RM APYAI YLB QMJTC CTCL ZW FYLB = THESE CIPHERS ARE TRIVIAL TO CRACK AND SOLVE EVEN BY HAND
+    
+    e. (:E9 6IA6C:6?46 J@F H:== DE2CE E@ C64@8?:D6 E96 492C24E6C D6ED @7 6249 6?4@5:?8]
+    Checking this cipher in CyberChef with the ROT-47 module it decrypts the key 
+    (:E9 6IA6C:6?46 J@F H:== DE2CE E@ C64@8?:D6 E96 492C24E6C D6ED @7 6249 6?4@5:?8] = With experience you will start to recognise the character sets of each encoding.
+    
+
+
+Exercise 2: Substitution Ciphers
+
+  Try decoding some of these ciphertexts.
+    a. Atbash: zgyzhs xrksvi dzh z hfyhgrgfgrlm xrksvi gszg ivevihvw gsv zokszyvg
+    using the atbash decrypter in cyberchef it dumps out the correct cipher straight away as 
+    zgyzhs xrksvi dzh z hfyhgrgfgrlm xrksvi gszg ivevihvw gsv zokszyvg = atbash cipher was a substitution cipher that reversed the alphabet
+
+    b. Kamasultra: Irtg tg kf qwkjbvq
+    Upper half: KBJHOESNWYCVI
+    Lower half: APMRZQGFXDULT
+    I was unable to to do this cipher using cyberchef as the subsititute cipher would not recongised the upper and lower cipher keys
+    So I did this by hand recongising that the letter in the cipher corisponded with the oposite letter on the cipher key which decrypted
+    to Irtg tg kf qwkjbvq = This is an example
+    
+    c. reqdhqxol mxmclfuf uf gtq bql gy neqmbuxs fhnfgughguyx ouztqef gtq cyxsqe gtq wqffmsq gtq qmfuqe ug nqoywqf
+    from doing CTF i use a tool to solve complex time consumming challenges hosted on quipqiup.com that decrypted the output to the
+    following 
+    frequency analysis is the key to breaking substitution ciphers the longer the message the easier it becomes
+
+
+Exercise 3:
+Try decode this Vigenère cipher:
+  mS jeNSkSfUkSaN TSbHVbe BVMMMV ZaPlVMR, gOaPcO NEXKZ TiiUNX da
+  AkdMCb KZD UOOOUO fHVW, MNU dTE nOMKeOeSVc MSjYOIRdQD nSfH kRQM
+  jdMRkOP Tf LQCfWQ KeYiN, jOhEiKX CZZTEic QMVbSEU gUTY dTE jKYE ZNQA fP
+  fRpSZG kY NRVKW TYO QFWOOTZfQNVce OW PdEheQNTi MNRVkSZc MNU
+  RQNTO YAbO fHV MUPYOdS dYdE jOOUiO. FHV WMIe SPER gMS kY OOdO gP
+  nSfH dOfHfN eO kRMT R ZXAZXfEod XEkdQR USPN’k KXWRie MRZ fO kRQ SRWQ
+  CZZTEidQXk VQTkOd (SpWNOc), da ATRUEmO fHZc fHV MUPYOdS lcQD R
+  bQPVKfIeQ WEp. lk FRb fHV WaSk gQLc-UZOnX aF kRQSV MUPYOdS Zc fHV
+  FUGVXèdE TSbHVb NUk dTEiO MRV WMNp YfHVbe WZdT VVbk SZWULRb
+  PEjSSNj.
+  
+  Since the key is unknown for this Vigenere Cipher I decided to use an online tool hosted at www.guballa.de
+  for bruteforcing the cipher, after a few seconds the tool found that the key used was mark and returned the output
+  of the given ciper to be.
+  
+  aS suBStItUtIoN CIpHErs BECAME PoPuLAR, pEoPlE BEGAN TryING to
+  AttACk AND DECODE tHEM, AND tHE wEAKnEsSEs ASsOCIAtED wItH tHEM
+  stARtED To BECoME KnOwN, sEvErAL CIPHErs EMErGED wITH tHE sAME IDEA oF
+  tRyING tO BREAK THE EFFECTIvENEss OF FrEquENCy ANALySIs AND
+  HENCE MAkE tHE CIPHErS mOrE sECUrE. THE MAIn IDEA wAS tO COmE uP
+  wItH mEtHoD sO tHAT A PLAINtExt LEttER DIDN’t ALWAys MAP tO tHE SAME
+  CIPHErtEXt LETtEr (SyMBOl), to ACHIEvE tHIs tHE CIPHErS usED A
+  rEPEAtInG KEy. by FAr tHE MoSt wELl-KNOwN oF tHESE CIPHErS Is tHE
+  VIGENèrE CIpHEr BUt tHErE ARE MANy OtHErs WItH VEry SIMILAr
+  DEsIGNs.
+  
+  
+Exercise 4:
+Try decode this transposition cipher:
+  NRAATIOSSPCOTNIRHIEPCSAOLDLAELMLCUORPNESTTMAUSNIIOHEACTEQNUIACTHOHENTGEREDOHFRTOTEETLNSEIRTEAXTAPBLYINCGIGNTAIDRI
+
+using decode.fr and the transposition cipher setting, with setting "Try purmination upto six" and setting the setting to horizontaal
+the key is decrypted 
+ATRANSPOSITIONCIPHERALSOCALLEDCOLUMNSPERMUTATIONISATECHNIQUETOCHANGETHEORDEROFTHELETTERSINATEXTBYPLACINGITINAGIRD
+
+A TRANSPOSITION CIPHER ALSO CALLED COLUMNS PERMUTATIONISA TECHNIQUE TO CHANGE THE ORDER OF THE LETTERS IN A TEXT BY PLACING IT IN A GIRD
+    

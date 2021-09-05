@@ -1,0 +1,35 @@
+#########################################################
+                Number Stations
+#########################################################
+
+KEY = AT_ONE_SIR
+
+one time pad = 66153 77185 10800 54937 48159 83271 12892 07132 34987 53954 23074
+
+Cipher Text = 66475 19274 92028 78494 24146 68542 17507 39398 32348 59378 70636
+
+Number Station ID = 39715
+
+
+
+0 1 2 3 4 5 6 7 8 9
+--------------------
+A T _ O N E _ S I R
+--------------------
+
+
+
+To decipher the numbers station we use a straddling checkerboard, trough a google search
+I built the board that can be seen bellow off of the key 
+
+
+
+	0	1	2	3	4	5	6	7	8	9
+	A	T		O	N	E		S	I	R
+2	B	C	D	F	G	H	J	K	L	M
+6	P	Q	U	V	W	X	Y	Z	#	/
+
+
+
+Plaintext: 
+DELIVER ALL DOCUMENTS TOMMROW BY DEAD DROP A

@@ -1,0 +1,15 @@
+RSA Level 4.5
+5
+All the challenges from here on will offer you hints to help you solve the challenge.
+
+However use the hints wisely as they are not free. You have been warned.
+
+Viewing a hint will cost you 40% of the marks available for that particular challenge. So only use them if you are really stuck.
+
+Viewing a hint does guarantee you'll be able to solve the challenge.
+
+The flag for this challenge is in the hint :)
+
+
+
+This challenge forced you to use a hint

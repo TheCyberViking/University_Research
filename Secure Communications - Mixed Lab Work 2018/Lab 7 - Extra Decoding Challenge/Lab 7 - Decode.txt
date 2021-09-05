@@ -1,0 +1,36 @@
+Encoded message 1: V2VsbCBkb25lIHlvdSBzb2x2ZWQgcGFydCAx
+Cryptic Hint: Think base
+code was base64 and decoded to = Well done you solved part 1
+
+
+Encoded message 2: d8578edf8458ce06fbc5bb76a58c5ca4
+Cryptic Hint: This is a popular #
+code was in MD5 and decrypted to qwerty
+
+
+Encoded message 3:
+Pna lbh oryvrir Zvpebfbsg hfrq guvf gb rapbqr vgf ertvfgel inyhrf!
+Cryptic Hint: unlucky for some
+This code was an anogram common on microsoft and was decoded to Can you believe Microsoft used this to encode its registry values!
+
+
+Encoded message 4:
+(6== 5@?6[ E9:D :D 2 >F49 =6DD @7E6? FD65 6?4@5:?8 D496>6
+Cryptic Hint: why does it have to be 13?
+This code was in ROT47 and decoded to Well done, this is a much less often used encoding scheme
+
+
+Encoded message 5:
+q293VFOcoKOlMKAmnKMyVUEbnKZtq2SmVUMypaxtqUWcL2g5YPO3MJkfVTEiozHtn
+J4tp29fqzyh MlO0nTymYPOiozk5VT9hMFOgo3WyVUEiVTqiYPOao29xVTk1L2fAPt==
+Cryptic Hint: it doesn’t have to be just once!
+this was base 64 using a different alphabeth which was N-ZA-Mn-z-m0-9+/=
+it decodes as - wow! impressive this was very tricky, well done in solving this, only one more to go, good luck
+
+
+
+Encoded message 6:
+EVIB DVOO WLMV LM HLOERMT GSV URMZO KILYOVN, SLKVUFOOB RG
+WRWM'G GZPV BLF GLL OLMT ZMW BLF VMQLBVW RG.
+This was another anogram and using quipqiup it was decoded to 
+VERY CELL DONE ON SOLVING THE FINAL PROBLEM, HOPEFULLY IT DIDN'T TAKE YOU TOO LONG AND YOU ENJOYED IT.

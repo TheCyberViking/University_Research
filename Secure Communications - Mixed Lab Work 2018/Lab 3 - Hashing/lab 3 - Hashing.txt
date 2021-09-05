@@ -1,0 +1,93 @@
+#######################
+part 1 - hashme.txt
+#######################
+File : hashme.txt
+
+1. What is the MD5 of the hashme.txt file?
+MD5	= 622e9f7f585adb048dd3e55a4f228b03
+
+2. What is the SHA1 of the file?
+SHA-1	= a5c91d3cc789776d859161bffc9965054cf924f3
+
+3. Are the MD5 and SHA1 hashes the same length? Explain why you think this is the case?
+No they are diffrent sizes and this is due to the the hashing type that is used
+
+4. Do you think your hashes match your classmates hashes? Why?
+yes, because the hashes for each file is the same and depends on the contents of each file
+
+5. Open your hashme.txt file and add a space after one of the numbers. Recalculate both the MD5 and
+SHA1 hashes. Have they changed much if at all from the original hashes we calculated?
+MD5	= 115f9d13535f9ea55cb2de157c26cbc9
+SHA-1 =	ba1950f6b264446b11059b50f994600f2efa4e8b
+
+
+6. If you changed the file name to hashme1.txt and recalculate the hashes, do you think the hashes will
+change? Test and see what actually happens.
+No it doesnt not change, this is because the hash is based on the contents of the file only
+
+
+
+######################
+3.4 - Password Hashs
+######################
+
+1. Why should we never store password as plain-text?
+ because an attacker can easily read the password if the service is ever breached
+
+2. Have you ever used a password reset function that was able to tell you your original password? What
+does this mean about how they are storing passwords?
+they are using a hash checker and comparing the password you have given agianst the hash of the passowrd stored
+
+3. Outline briefly how an attacker who gets hold of the new hashed password file cannot guess the users
+original password.
+it would depended on if there is a salt on the hash or not, the passwords themselvs are not stored but the hash of the 
+password is
+
+
+4. Given the hash of a password shown below can you tell which hashing algorithm was likely used to
+hash them? How can you tell?
+
+
+give hash - d177b4d1d9e6b6fa86521e4b3d00b029
+I would say MD5 - due to the lenght of which the hash was made
+
+5. Can you figure out what password string the previous hash represents?
+cracking the hash as a MD5 I got the password as liverpool
+
+
+
+
+
+#######################
+3.5 - Rainbow tables
+#######################
+1. Do a quick search on the terms Rainbow Tables What are they? How do they work?
+they work based on comparing pre-hashed passwords from common lists
+
+2. Check out these online tools.
+https://crackstation.net/
+https://hashkiller.co.uk/
+http://crackhash.com/
+What services are they offering? How are they doing it?
+they offer hash cracking, they used pre built lists of hashes of every possible combination of words 
+
+3. Create the hash of one of your own commonly used passwords (or a made up one) and put the hash
+back into one of these on-line tools to see if it would have found your password?
+I made the hash using Apple, it craked it as apple
+
+4. Try googling my password hash from earlier to try cracking it. How do Google and other search
+engines know these hashes?
+they known them by indexing pages that contain the hash
+
+5. Check out this actual Exxon Mobil Corporation database dump by the hacking group Anonymous in
+Jun 2012.
+http://pastebin.com/1ca3BR19
+
+6. Are the passwords from the dump hashed? If so, which hashing algorithm was used? How can you
+tell?
+these passwords where hashed and dehashed by users online who crack and sell the passwords lists, most of these passwords where
+listed on crackstation
+
+7. Try crack a few random passwords from this actual database dump.
+Hash	                            Type	Result
+521070613f88bcf83938000d149b0871	md5	exxonmobil

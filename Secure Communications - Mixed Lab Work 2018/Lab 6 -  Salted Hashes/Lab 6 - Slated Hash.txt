@@ -1,0 +1,65 @@
+#############################
+Cracking Salted Hashes
+#############################
+
+
+Reading trough the brife there was multiple hints, the one that seems to be most possible is www.exploringsecurity.com as a form of salt.
+using a hash identification tool online - https://www.onlinehashcrack.com/hash-identification.php hash recommedned that the hashes are
+Sha1 hashesh and since the brife descibes that it is a ecnryted as salt + hash we know where to put the possible salt when cracking the
+Password files. Doing my normal procedure I googled the hashes, to which I found multiple form posts by past students trying to figure
+out how to crack them. Was no help
+
+so on my personel built cracking rig I personaly own at home, I threw the hashes into text file called hashes.txt in following input
+
+
+2834da08d58330d8dafbb2ac1c0f85f6b3b135ef:www.exploringsecurity.com
+92e54f10103a3c511853c7098c04141f114719c1:www.exploringsecurity.com
+437fbc6892b38db6ac5bdbe2eab3f7bc924527d9:www.exploringsecurity.com
+fafa4483874ec051989d53e1e432ba3a6c6b9143:www.exploringsecurity.com
+06f6fe0f73c6e197ee43eff4e5f7d10fb9e438b2:www.exploringsecurity.com
+f44f3b09df53c1c11273def13cacd8922a86d48c:www.exploringsecurity.com
+
+and throwing the command into Hashcat on my Parrot OS currently Virtualised on my Proxmox server
+
+hashcat -m 120 -a 3 hashs.txt --force
+
+the -m stands for mode, 120 is the mode for salted sha1 hashes, -a is the atttack mode, 3 is the mode bruteforce, hashs.txt is where 
+the hashes and salt is located and --force means to force cracking and bypass errors as I havenot configured the proper drivers
+for my bridged network cards yet.
+
+The whole proces on my server took 10 minutes in tottal
+
+
+Username - Sparky
+Password - 2834da08d58330d8dafbb2ac1c0f85f6b3b135ef 
+Role - admin
+Cracked - Admin09
+
+Username - Mark123 
+Password - 92e54f10103a3c511853c7098c04141f114719c1 
+Role - user
+Cracked - Mark123
+
+Username - superman  
+Password -  437fbc6892b38db6ac5bdbe2eab3f7bc924527d9
+Role - user
+Cracked - qwerty
+
+Username - security 
+Password -  fafa4483874ec051989d53e1e432ba3a6c6b9143 
+Role - user
+Cracked - 121298
+
+Username - Tomtom 
+Password - 06f6fe0f73c6e197ee43eff4e5f7d10fb9e438b2
+Role - user
+Cracked - 54321
+
+Username - JillC 
+Password - f44f3b09df53c1c11273def13cacd8922a86d48c
+Role - user
+Cracked - Q2w13sA
+
+The last pass was the hardest to crack but given some researcha and talking with fellow
+students I decided to change the format fo the command and instead use this command
+hashcat -m 120 -a 3 -1 ?l?u?d hash.txt ?1?1?1?1?1?1?1
