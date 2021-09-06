@@ -17,6 +17,12 @@ This is a collection of Research Papers, Code and Scripts from attending Univers
 | Secure Communications -  Braking HashChains                  | 2018 | A    | Tool for cracking Blockchain / Hashchain with known Seed Key       |
 | Secure Communications - Mixed Lab Work               | 2018 | A+    |   Mixture of Cryptography and secure communications Lab work                              |
 | Secure Communications - Braking RSA - Lab Work            | 2018 | B+    |   Mixture of labs on braking RSA cryptography via Python                      |
-  
+| Thesis PoC - Redteam Net-Admin Distraction tool   | 2020 |     | Proof of Concept as Backup Thesis Proposal      |
+| Application Security - Vulnerability Assessment                      | 2018 |   A+    |  |
+| Business Continuity Management and Cloud Security - BCP/BIA                     | 2019 | B    | Building a BCP/BIA for a known company        |
+| Cloud Security - Building a Secure VPN Tunnel               | 2019 | A    |     Build a secure VPN tunnel with a hosted service             |
+| Mobile Device Forensics - Open Soure Project                  | 2020 | B     |   preform analysis of a forensics image of a mobile devicing using open source tools       |
+| Newtork Security - Firewalls Project                | 2019 | A    |    Test multiple types of open source firewalls against a few attacks          |
+
 .  
 ## More Comming soon
